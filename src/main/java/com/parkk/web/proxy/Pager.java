@@ -1,5 +1,6 @@
 package com.parkk.web.proxy;
 
+import com.parkk.web.Gym.GymRepository;
 import com.parkk.web.mappers.GymMapper;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Pager {
     @Autowired GymMapper gymMapper;
+    @Autowired
+    GymRepository gymRepository;
     private int rowCount, startRow, endRow,
             pageCount, pageSize, startPage, endPage, nowPage,
             blockCount, blockSize, preBlock, nextBlock, nowBlock;

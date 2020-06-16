@@ -8,7 +8,10 @@ import java.util.List;
 
 @Repository
 public interface GymMapper {
-    public GymDTO selectGym(String name);
-    public List<GymDTO> selectReviews(Pager pager);
+    public void insertGym(GymDTO gym);
+    public void updateGym(GymDTO gym);
+    public void deleteGym(GymDTO gym);
+    public GymDTO selectGym(String gymNo);
+    public List<GymDTO> selectGyms(Pager pager);
     public int count();
 }

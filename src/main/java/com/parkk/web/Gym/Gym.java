@@ -17,6 +17,8 @@ public class Gym {
     @Column(length = 10) private String mailing_address;
     @Column(length = 200) private String name;
 
+
+
     public Gym(){}
 
     public Long getGymNo() {

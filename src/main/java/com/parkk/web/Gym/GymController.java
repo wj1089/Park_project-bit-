@@ -39,6 +39,7 @@ public class GymController {
         pxy.print("***********");
         for(GymDTO g : list){
         pxy.print(g.toString());
+
     }
         box.clear();
         box.put("pager", pager);

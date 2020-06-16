@@ -1,0 +1,39 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.parkk.web.mappers.GymMapper">
+    <insert id="insertGym"
+            parameterType="com.parkk.web.Gym.GymDTO">
+            insert serNum, openYN, number , address, mailingAddress, name
+            into gym
+        values (#{serNum},#{openYN},#{number},#{address},#{mailingAddress},#{name})
+    </insert>
+
+    <update id="updateGym"
+            parameterType="com.parkk.web.Gym.GymDTO">
+            update set title = #{title} from gym
+            where gymNo like 'gym'
+    </update>
+
+    <delete id="deleteGym"
+            parameterType="com.parkk.web.Gym.GymDTO">
+            delete from gym where gymNo like 'movieNo'
+    </delete>
+    <select id="selectGyms" resultType="com.parkk.web.Gym.GymDTO"
+            parameterType="com.parkk.web.proxy.Pager">
+      select     ser_Num serNum, open_YN openYN, number , address, mailing_address mailingAddress, name
+
+      from gym
+      limit #{rowStart}, #{pageSize}
+
+    </select>
+    <select id="selectGym" resultType="com.parkk.web.Gym.GymDTO">
+      select    ser_Num serNum, open_YN openYN, number , address, mailing_address mailingAddress, name
+      from users
+      where id = #{id}
+    </select>
+    <select id="count" resultType="int">
+      select count (*)
+      from gym
+    </select>
+</mapper>
