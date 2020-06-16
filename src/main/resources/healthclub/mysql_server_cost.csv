@@ -1,0 +1,6 @@
+disk_temptable_create_cost,,2020-06-11 20:09:14,,20
+disk_temptable_row_cost,,2020-06-11 20:09:14,,0.5
+key_compare_cost,,2020-06-11 20:09:14,,0.05
+memory_temptable_create_cost,,2020-06-11 20:09:14,,1
+memory_temptable_row_cost,,2020-06-11 20:09:14,,0.1
+row_evaluate_cost,,2020-06-11 20:09:14,,0.1

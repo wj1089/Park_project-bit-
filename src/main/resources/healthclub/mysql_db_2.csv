@@ -1,0 +1,2 @@
+localhost,performance_schema,mysql.session,Y,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N
+localhost,sys,mysql.sys,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,Y

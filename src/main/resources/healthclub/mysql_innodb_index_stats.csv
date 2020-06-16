@@ -1,0 +1,13 @@
+mysql,component,PRIMARY,2020-06-11 20:09:14,n_diff_pfx01,0,1,component_id
+mysql,component,PRIMARY,2020-06-11 20:09:14,n_leaf_pages,1,,Number of leaf pages in the index
+mysql,component,PRIMARY,2020-06-11 20:09:14,size,1,,Number of pages in the index
+mysql,gtid_executed,PRIMARY,2020-06-11 20:09:14,n_diff_pfx01,0,1,source_uuid
+mysql,gtid_executed,PRIMARY,2020-06-11 20:09:14,n_diff_pfx02,0,1,"source_uuid,interval_start"
+mysql,gtid_executed,PRIMARY,2020-06-11 20:09:14,n_leaf_pages,1,,Number of leaf pages in the index
+mysql,gtid_executed,PRIMARY,2020-06-11 20:09:14,size,1,,Number of pages in the index
+mysql,gym,PRIMARY,2020-06-13 19:13:52,n_diff_pfx01,0,1,gym_no
+mysql,gym,PRIMARY,2020-06-13 19:13:52,n_leaf_pages,1,,Number of leaf pages in the index
+mysql,gym,PRIMARY,2020-06-13 19:13:52,size,1,,Number of pages in the index
+sys,sys_config,PRIMARY,2020-06-11 20:09:15,n_diff_pfx01,6,1,variable
+sys,sys_config,PRIMARY,2020-06-11 20:09:15,n_leaf_pages,1,,Number of leaf pages in the index
+sys,sys_config,PRIMARY,2020-06-11 20:09:15,size,1,,Number of pages in the index

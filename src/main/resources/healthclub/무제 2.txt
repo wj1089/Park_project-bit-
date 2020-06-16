@@ -1,0 +1,6 @@
+/Users/apple/IdeaProjects/health2/src/main/resources/healthclub/gym2.txt
+
+
+
+seq , ser_Num,  open_YN, number, address,
+            mailing_address, name, centerType, public_Private;

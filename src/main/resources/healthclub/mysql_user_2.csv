@@ -1,0 +1,4 @@
+localhost,mysql.infoschema,Y,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,"",0x,0x,0x,0,0,0,0,caching_sha2_password,$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED,N,2020-06-11 20:09:15,,Y,N,N,,,,
+localhost,mysql.session,N,N,N,N,N,N,N,Y,N,N,N,N,N,N,N,Y,N,N,N,N,N,N,N,N,N,N,N,N,N,"",0x,0x,0x,0,0,0,0,caching_sha2_password,$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED,N,2020-06-11 20:09:15,,Y,N,N,,,,
+localhost,mysql.sys,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,"",0x,0x,0x,0,0,0,0,caching_sha2_password,$A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED,N,2020-06-11 20:09:15,,Y,N,N,,,,
+localhost,root,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,"",0x,0x,0x,0,0,0,0,caching_sha2_password,"",N,2020-06-11 20:09:14,,N,Y,Y,,,,
