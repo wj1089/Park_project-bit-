@@ -142,8 +142,8 @@
                 this.$store.dispatch('gym/search',this.searchWord)
             },
             yongsan(){
-                alert(this.searchWord)
-                this.$store.dispatch('gym/find',this.searchWord)
+                let yongsan = '용'
+                this.$store.dispatch('gym/find',yongsan)
             },
             junggu(){
                 alert(this.searchWord)
