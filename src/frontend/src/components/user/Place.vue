@@ -62,18 +62,30 @@
             </v-list>
         </v-navigation-drawer>
 
-        <div>
-            <input id="search"
-                   v-model="searchWord"
-                   type="text"
-                   style=" background-repeat: no-repeat; background-position: 88% 150%, 120% 50%;"
-                   title="검색">
-        </div>
-        <div id="box">
-            <input  @click="search" id="google_search" type="button" value="Google 검색">
+<!--        <div>-->
+<!--            <input id="search"-->
+<!--                   v-model="searchWord"-->
+<!--                   type="text"-->
+<!--                   style=" background-repeat: no-repeat; background-position: 88% 150%, 120% 50%;"-->
+<!--                   title="검색">-->
+<!--        </div>-->
+<!--        <div id="box">-->
+<!--            <input  @click="search" id="google_search" type="button" value="Google 검색">-->
+<!--        </div>-->
 
-        </div>
-
+        <v-col cols="12" sm="6" md="4">
+            <v-subheader>지역별 헬스장 현황</v-subheader>
+<!--            <v-radio-group v-model="transition" hide-details>-->
+<!--                <v-radio value="slide-y-transition" label="용산구"></v-radio>-->
+<!--                <v-radio value="slide-y-reverse-transition" label="중구"></v-radio>-->
+<!--                <v-radio value="slide-x-transition" label="종로구"></v-radio>-->
+<!--            </v-radio-group>-->
+            <tr>
+                <input type="radio" name="radioTest" value="yongsan" @click="yongsan" checked>용산구<br>
+                <input type="radio" name="radioTest" value="junggu" @click="junggu" checked>중구<br>
+                <input type="radio" name="radioTest" value="jongro" @click="jongro" checked>종로구<br>
+            </tr>
+        </v-col>
         <div id="app">
             <v-app id="inspire">
                 <v-simple-table>
@@ -128,7 +140,19 @@
             search(){
                 alert(this.searchWord)
                 this.$store.dispatch('gym/search',this.searchWord)
-            }
+            },
+            yongsan(){
+                alert(this.searchWord)
+                this.$store.dispatch('gym/find',this.searchWord)
+            },
+            junggu(){
+                alert(this.searchWord)
+                this.$store.dispatch('gym/find',this.searchWord)
+            },
+            jongro(){
+                alert(this.searchWord)
+                this.$store.dispatch('gym/find',this.searchWord)
+            },
         },
         transferPage(){
             this.$store.dispatch('gym/search',{cate:'gyms',searchWord:'null'})

@@ -1,14 +1,11 @@
 package com.parkk.web.Gym;
 
 import com.parkk.web.proxy.Box;
-import com.parkk.web.proxy.IFunction;
-import com.parkk.web.proxy.Pager;
+import com.parkk.web.Pager.Pager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.parkk.web.proxy.Proxy;
 
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -30,20 +27,20 @@ public class GymController {
         } else {
             pxy.print("검색어가 " + searchWord);
         }
-        pager.setNowPage(pxy.integer(pageNumber));
-        pager.setBlockSize(5);
-        pager.setPageSize(5);
-        pager.paging();
-        IFunction<Pager, List<GymDTO>> f = p ->  gymRepository.findAll(p);
-        List<GymDTO> list = f.apply(pager);
-        pxy.print("***********");
-        for(GymDTO g : list){
-        pxy.print(g.toString());
+//        pager.setNowPage(pxy.integer(pageNumber));
+//        pager.setBlockSize(5);
+//        pager.setPageSize(5);
+//        pager.paging();
+//        IFunction<Pager, List<GymDTO>> f = p ->  gymRepository.findAll(p);
+//        List<GymDTO> list = f.apply(pager);
+//        pxy.print("***********");
+//        for(GymDTO g : list){
+//        pxy.print(g.toString());
 
-    }
-        box.clear();
-        box.put("pager", pager);
-        box.put("list", list);
+//    }
+//        box.clear();
+//        box.put("pager", pager);
+//        box.put("list", list);
         return box.get();
     }
 }

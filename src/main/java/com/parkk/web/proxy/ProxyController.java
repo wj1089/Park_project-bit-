@@ -15,6 +15,7 @@ public class ProxyController {
     @Autowired Proxy pxy;
     @Autowired GymRepository gymRepository;
     @Autowired FileUploader uploader;
+
     @PostMapping("/Place")
     public HashMap<String,Object> place(@RequestBody String searchWord){
         pxy.print("넘어온 키워드: "+searchWord);
@@ -27,4 +28,5 @@ public class ProxyController {
         uploader.upload();
         return null;
     }
+
 }

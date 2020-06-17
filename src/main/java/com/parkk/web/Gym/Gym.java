@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Gym {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long gymNo;
-    @Column(length = 550) private String ser_Num;
+    @Column(length = 200) private String ser_Num;
     @Column(length = 50) private String open_YN;
     @Column(length = 50) private String number;
     @Column(length = 350) private String address;

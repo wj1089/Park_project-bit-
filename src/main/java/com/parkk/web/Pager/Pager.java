@@ -1,14 +1,13 @@
-package com.parkk.web.proxy;
+package com.parkk.web.Pager;
 
 import com.parkk.web.Gym.GymRepository;
-import com.parkk.web.mappers.GymMapper;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 @Data
 @Component
 public class Pager {
-    @Autowired GymMapper gymMapper;
+    @Autowired PageRepository pageRepository;
     @Autowired
     GymRepository gymRepository;
     private int rowCount, startRow, endRow,
@@ -21,9 +20,11 @@ public class Pager {
 
     public void paging(){
 
-        rowCount = gymMapper.count();
+//        rowCount = pageRepository.count();
+
         startRow = nowPage * pageSize;
-        endRow = (nowPage != (pageCount - 1)) ? startRow + (pageSize -1) : rowCount -1;
+        endRow = (nowPage != (pageCount - 1)) ? startRow + (
+                pageSize -1) : rowCount -1;
         pageCount = (rowCount % pageSize != 0) ? rowCount / pageSize + 1 : rowCount / pageSize;
         startPage = nowBlock * blockSize;
         endPage = (nowBlock != (blockCount - 1)) ? startPage + (blockSize - 1) : pageCount - 1;
